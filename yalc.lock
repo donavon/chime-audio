@@ -1,0 +1,9 @@
+{
+  "version": "v1",
+  "packages": {
+    "@chime/devices": {
+      "signature": "1b295a605ec35f8f6b3c2a699490ca79",
+      "file": true
+    }
+  }
+}

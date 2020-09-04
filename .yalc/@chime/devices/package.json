@@ -1,0 +1,42 @@
+{
+  "name": "@chime/devices",
+  "publishConfig": {
+    "access": "public",
+    "tag": "next"
+  },
+  "version": "0.1.0-beta.1-1b295a60",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build"
+  },
+  "peerDependencies": {
+    "amazon-chime-sdk-js": "^1.15.0",
+    "react": ">=16"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "author": "Donavon West <github@donavon.com> (https://github.com/donavon)",
+  "module": "dist/core.esm.js"
+}
